@@ -340,17 +340,30 @@ border-radius: 2px;
 /* Responsivo para telas até 900px */
 @media (max-width: 900px) {
     header {
+        flex-direction: column; /* flex-direction: column; - para deixar o cabeçalho em coluna.*/
+        align-items: center; /* align-items: center; - para centralizar os itens do cabeçalho.*/
         padding: 12px 16px;
-        width: 100vw;
+        width: 100vw; /* width: 100vw; - para deixar o cabeçalho com a largura total da tela.*/
     }
 
     header nav ul {
+        display: flex; /* display: flex; - para deixar os itens do menu em linha.*/
+        flex-direction: column; /* flex-direction: column; - para deixar os itens do menu em coluna.*/
         gap: 18px;
         margin-left: 0;
+        margin-top: 12px;
+        width: 100%; /* width: 100%; - para deixar o menu com a largura total do cabeçalho.*/
+        justify-content: center;
+        align-items: center;
     }
 
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.3rem; 
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin: 0 auto;
+        text-align: center;
+
     }
 
     .container,
@@ -396,7 +409,7 @@ border-radius: 2px;
     }
 
     .arrows {
-        width: 100vw;
+        width: 80vw;
         top: auto;
         bottom: 80px;
         left: 50%;
