@@ -22,4 +22,8 @@ Um carrossel de produtos moderno, animado e totalmente responsivo, feito com **H
 <h3>👨‍💻 Créditos</h3>
 <p>Desenvolvido por [Kaelton] no DEVCLUB.</p>
 <h3>👀 Preview</h3>
-<img>
+
+<p align="center">
+  <img src="./img/codematriz.png" width="350" alt="notebook preview">
+  <img src="./img/mobile.png" width="350" alt="celular preview">
+</p>
