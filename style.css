@@ -79,7 +79,7 @@ header nav ul li:hover:after {
     overflow: hidden;
 }
 
-.principal::before {
+.container::before {
     content: "";
     position: absolute;
     width: 500px;
@@ -420,7 +420,7 @@ border-radius: 2px;
     }
 
     .indicators {
-        bottom: 40px;
+        bottom: 60px;
     }
 
     .number {
