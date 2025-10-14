@@ -25,5 +25,5 @@ Um carrossel de produtos moderno, animado e totalmente responsivo, feito com **H
 
 <p align="center">
   <img src="./img/codematriz.png" width="350" alt="notebook preview">
-  <img src="./img/mobile.png" width="350" alt="celular preview">
+  <img src="./img/mobile.png" width="150" alt="celular preview">
 </p>
