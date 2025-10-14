@@ -348,10 +348,8 @@ border-radius: 2px;
 
     header nav ul {
         display: flex; /* display: flex; - para deixar os itens do menu em linha.*/
-        flex-direction: column; /* flex-direction: column; - para deixar os itens do menu em coluna.*/
-        gap: 18px;
         margin-left: 0;
-        margin-top: 12px;
+        margin-top: 50px;
         width: 100%; /* width: 100%; - para deixar o menu com a largura total do cabeçalho.*/
         justify-content: center;
         align-items: center;
@@ -422,7 +420,7 @@ border-radius: 2px;
     }
 
     .indicators {
-        bottom: 20px;
+        bottom: 40px;
     }
 
     .number {
