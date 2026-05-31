@@ -2,7 +2,7 @@ const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 const items = document.querySelectorAll('.item');
 const dots = document.querySelectorAll('.dot');
-const numberindicator = document.querySelector('.number');
+const numberIndicator = document.querySelector('.number'); // corrigido para camelCase
 const list = document.querySelector('.list');
 
 let active = 0;
@@ -28,23 +28,33 @@ function update(direction) {
     items[active].classList.add('active');
     dots[active].classList.add('active');
 
-    numberindicator.textContent = String(active + 1).padStart(2, '0');
-
-
+    numberIndicator.textContent = String(active + 1).padStart(2, '0');
 }
 
-clearInterval(timer);
-timer = setInterval(() => {
-    update(1)
-}, 4000);
+// Função para resetar o timer ao clicar nos botões - adicionado
+function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => update(1), 4000);
+}
 
-
+// Timer inicia corretamente - corrigido
+timer = setInterval(() => update(1), 4000);
 
 // Eventos dos botões
 prevButton.addEventListener("click", function () {
     update(-1);
+    resetTimer(); // reseta o timer ao clicar
 });
 
 nextButton.addEventListener("click", function () {
     update(1);
+    resetTimer(); // reseta o timer ao clicar
+});
+
+// Eventos dos dots
+dots.forEach((dot, index) => {
+    dot.addEventListener("click", function () {
+        update(index - active);
+        resetTimer(); // reseta o timer ao clicar
+    });
 });
